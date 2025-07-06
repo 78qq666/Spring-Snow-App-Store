@@ -1,134 +1,134 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<link>
+<html lang="en">
+
+<head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>春雪应用商店</title>
-   <link rel="icon" href="icon.png">
+   <title>Document</title>
    <style>
-      body{
-         background-color: lightgray;
+      body {
+         background-color: #ebebeb;
+         display: flex;
       }
-      #jj{
-         background-color:darkslategray;
-         height: 960px;
-         width: 250px;
-         position: fixed;
-         font-weight: bold;
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
       }
-      #jj> #ii {
-         text-align: center;
-         font-size: 200%;
-         color: white;
-         font-family: kaiti;
+
+      .large {
+         display: flex;
+         justify-content: space-evenly;
+         width: 1595px;
+         flex-wrap: wrap;
+         margin-left: 325px;
+         align-content: space-around;
       }
-      #jj> p {
-         text-align: center;
-         font-size: 170%;
-         color: white;
-         font-family: kaiti;
-      }
-      #jj a{
-         color: azure;
-         text-decoration: none;
-      }
-      .ii{
-         width: 1660px;
-         height: 960px;
-         background-color:lightgray;
-         white-space: nowrap;
-         margin-left: 250px;
-      }
-      .ii> div{
-         width: 800px;
-         height: 250px;
+
+      .left {
+         width: 300px;
+         height: 900px;
          background-color: white;
-         display: inline-block;
-         border-style: solid;
-         border-width: 5px;
-         border-color: lightgray;
+         margin-top: 25px;
+         margin-left: 25px;
+         border-radius: 30px;
+         overflow: hidden;
+         position: fixed;
+         top: 0;
+         left: 0;
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
       }
-      .ii p{ 
-         display : inline;
-         margin: 30px;
-         padding: 0px;
-        font-size: 200%;
-        font-weight: bold;
-       }
-       img{
-         margin: 25px;
-         margin-top: 15px;
-         white-space:nowrap;
-       }
-       .ii a{
-          margin: 70%; 
-          margin-bottom: 50px;
-          background-color: blue;
-          color: white;
-          text-decoration: none;
-       }
-       img{
-      height:120px; 
-      width:120px;
-       }
+
+      .p {
+         text-align: center;
+         background-color: #fff;
+         border-radius: 30px 30px 0 0;
+         margin: 50px 0 30px 0;
+         font-size: 30px;
+      }
+
+      .left>a {
+         text-decoration: none;
+         color: black;
+         display: block;
+         background-color: #ffffff;
+         text-align: center;
+         font-size: 25px;
+         height: 100px;
+         margin-top: 20px;
+      }
+
+      .left>a:hover {
+         background-color: #f8f8f8;
+      }
+
+      .right {
+         width: 750px;
+         height: 201px;
+         background-color: #fff;
+         margin-top: 25px;
+         border-radius: 30px;
+         display: flex;
+         padding-right: 20px;
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2)
+      }
+      .right img {
+         width: 160px;
+         height: 160px;
+         border-radius: 30px;
+         margin: 20px;
+      }
+      .right h3 {
+         margin: 20px 0 0 20px;
+         font-size: 40px;
+         color: #333;
+      }
+      .right p {
+         margin: 0 0 0 20px;
+         font-size: 20px;
+         color: #666;
+      }
+      .right a {
+         text-decoration: none;
+         color: white;
+         background-color: #007bff;
+         padding: 10px 40px;
+         border-radius: 50px;
+         margin: 20px 10px 20px 100px;
+         align-self: center;
+         display: block;
+        font-size: 20px;
+        justify-content: end;
+      }
+      .txt {
+         display: flex;
+         flex-direction: column;
+         justify-content: start;
+         margin-left: 20px;
+         width: 261px;
+      }
    </style>
 </head>
+
 <body>
-   <div id=jj class="left">
-      <br><p id="ii">春雪应用商店</p>
-      <p><a href="./首页.html">首页</a></p>
-      <p><a href="./首页.html">关注我们</a></p>
-      <p><a href="./首页.html">关于</a></p>
-      
-</div>
-<div class="ii">
-   <div>
-      <br>
-      <p>NOVA桌面</p><br>
-      <img src="Snipaste_2025-01-15_16-22-38.png">
-      <a href="#">下载</a>
-      </div>
-   <div>
-      <br>
-      <p>free</p><br>
-      <img src="Snipaste_2025-01-15_16-33-47.png">
-      <a href="#">下载</a>
-      </div><br>
-   <div>
-      <br>
-      <p>奇妙应用</p><br>
-      <img src="Snipaste_2025-01-15_16-36-36.png">
-      <a href="#">下载</a>
-      </div>
-   <div>
-      <br>
-      <p>telegram</p><br>
-      <img src="Snipaste_2025-01-15_16-39-49.png">
-      <a href="#">下载</a>
-      </div><br>
-   <div>
-      <br>
-      <p>bilimiao</p><br>
-      <img src="Snipaste_2025-01-15_16-41-00.png">
-      <a href="#">下载</a>
-      </div>
-   <div>
-      <br>
-      <p>Aurora store</p><br>
-      <img src="Snipaste_2025-01-15_16-43-04.png">
-      <a href="#">下载</a>
-      </div><br>
-   <div>
-      <br>
-      <p>太极</p><br>
-      <img src="Snipaste_2025-01-15_16-44-31.png">
-      <a href="#">下载</a>
-      </div>
-   <div>
-      <br>
-      <p>面具</p><br>
-      <img src="Snipaste_2025-01-15_16-45-34.png">
-      <a href="#">下载</a>
-      </div>
+   <div class="left">
+      <h1 class="p">SPRING SNOW<br>APP STORE</h1>
+      <a href="#"><br>首页</a>
+      <a href="#"><br>分类</a>
+      <a href="#"><br>关于我们</a>
+      <a href="#"><br>捐赠</a>
+   </div>
+   <div class="large">
+      <div class="right"><img src="Snipaste_2025-01-15_16-22-38.png" alt=""><div class="txt"><h3>nova桌面</h3><br><p>轻量化优质安卓桌面</p></div><a href="">下载</a></div>
+      <div class="right"><img src="Snipaste_2025-01-15_16-33-47.png" alt=""><div class="txt"><h3>free</h3><br><p>免费看片是我的秘密武器</p></div><a href="">下载</a></div>
+      <div class="right"><img src="Snipaste_2025-01-15_16-36-36.png" alt=""><div class="txt"><h3>奇妙应用</h3><br><p>海量安卓软件资源</p></div><a href="">下载</a></div>
+      <div class="right"><img src="Snipaste_2025-01-15_16-39-49.png" alt=""><div class="txt"><h3>telegram</h3><br><p>加密通讯软件</p></div><a href="">下载</a></div>
+      <div class="right"><img src="Snipaste_2025-01-15_16-41-00.png" alt=""><div class="txt"><h3>bilimiao</h3><br><p>非常好用的第三方B站客户端</p></div><a href="">下载</a></div>
+      <div class="right"><img src="Snipaste_2025-01-15_16-43-04.png" alt=""><div class="txt"><h3>aurora store</h3><p>轻量开源版Google Play</p><br></div><a href="">下载</a></div>
+      <div class="right"><img src="Snipaste_2025-01-15_16-44-31.png" alt=""><div class="txt"><h3>太极</h3><br><p>为你的安卓应用内嵌模块</p></div><a href="">下载</a></div>
+      <div class="right"><img src="Snipaste_2025-01-15_16-45-34.png" alt=""><div class="txt"><h3>magisk</h3><br><p>为你的手机系统内嵌模块,也可以root</p></div><a href="">下载</a></div>
+   </div>
 </body>
+
 </html>
