@@ -4,14 +4,15 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>SPRING SNOW APP STOREt</title>
    <style>
       body {
-         background-image: url("bjDCX.png");
+         background-image: url("bj/bjDCX.png");
          display: flex;
          background-repeat: no-repeat;
          background-position: top center;
-         background-size: 100% ;
+         background-size: 100% 100%;
+         background-attachment: fixed;
       }
 
       * {
@@ -40,7 +41,7 @@
          position: fixed;
          top: 0;
          left: 0;
-         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
       }
 
       .p {
@@ -59,7 +60,7 @@
          text-align: center;
          font-size: 25px;
          height: 100px;
-         margin-top: 20px;
+         margin-top: 2px;
       }
 
       .left>a:hover {
@@ -74,13 +75,14 @@
          border-radius: 30px;
          display: flex;
          padding-right: 20px;
-         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2)
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5)
       }
       .right img {
          width: 160px;
          height: 160px;
          border-radius: 30px;
          margin: 20px;
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
       }
       .right h3 {
          margin: 20px 0 0 20px;
@@ -103,6 +105,7 @@
          display: block;
         font-size: 20px;
         justify-content: end;
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
       }
       .txt {
          display: flex;
@@ -140,7 +143,7 @@
    let mjq=Math.floor(Math.random()*pc.length);
    console.log(pc[mjq]);
    const body=document.querySelector('body');
-   document.body.style.backgroundImage = "url(\"bj" + pc[mjq] + ".png\")";
+   document.body.style.backgroundImage = "url('bj/bj" + pc[mjq] + ".png')";
    }
 </script>
 </html>
