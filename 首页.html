@@ -114,19 +114,112 @@
          margin-left: 20px;
          width: 261px;
       }
+      .right_ad {
+         width: 1050px;
+         height: 425px;
+         background-color: #fff;
+         margin-top: 25px;
+         border-radius: 30px;
+         display: flex;
+         padding-right: 20px;
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5)
+         
+      }
+      .right_id {
+         width: 450px;
+         height:425px ;
+         background-color: #fff;
+         margin-top: 25px;
+         border-radius: 30px;
+         display: flex;
+         padding-right: 20px;
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5)
+      }
+      .adleft{
+         width: 748px;
+         height: 425px;
+         border-radius: 30px 0 0 30px;
+      }
+      .adright>h3 {
+         font-size: 50px;
+         color: black;
+         margin-top: 20px;
+      }
+      .adright {
+         width: 302px;
+        text-align: center;
+      }
+      .adright>p {
+         font-size: 20px;
+         color: #666;
+         margin-top: 10px;
+      }
+      .anl {
+         width: 30px;
+         height: 30px;
+         background-color: #cfcfcf;
+         border-radius: 50%;
+         margin-top: 225px ;
+         margin-right: 70px;
+         display: inline-block;
+         color: #ffffff;
+      }
+      .anr {
+         width: 30px;
+         height: 30px;
+         background-color: #cfcfcf;
+         border-radius: 50%;
+         margin-top: 225px ;
+         margin-left: 70px;
+         display: inline-block;
+         color: #ffffff;
+      }
+      .right_id {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         ;
+      }
+      .right_id img {
+         width: 180px;
+         height: 180px;
+         border-radius: 30px;
+         display: block;
+         margin: 30px 125px 20px 150px ;
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+      }
+      .right_id a {
+            font-size: 40px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            margin-right: 125px;
+            margin-left: 150px;
+      }
+      .right_id p {
+         font-size: 20px;
+         color: #666;
+         text-align: center;
+         margin-right: 100px;
+         margin-left: 125px;
+      }
    </style>
 </head>
 
 <body>
    <div class="left">
       <h1 class="p">SPRING SNOW<br>APP STORE</h1>
-      <a href="#"><br>首页</a>
-      <a href="#"><br>分类</a>
-      <a href="#"><br>关于我们</a>
+      <a href="首页.html"><br>首页</a>
+      <a href="分类.html" target="_blank"><br>分类</a>
+      <a href="关于.html" target="_blank"><br>关于我们</a>
       <a href="#"><br>捐赠</a>
       <a href="#" onclick="jb()"><br>切换背景</a>
    </div>
    <div class="large">
+      <div class="right_ad"><img class="adleft" src="AD\AD(0).png"><div class="adright"><h3>决战朝鲜</h3><p>一款战争模拟游戏</p><div class="anl"><</div><div class="anr">></div></div></div>
+      <div class="right_id"><img src="QQ图片20250707124139.jpg" alt="">
+       <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=UgdgIoa_wz-lFVf9BYYM9zRcZUsjopDK&authKey=aisyFPDWCrbgSKPCPkTULDiaGJkY54v3E9zl%2Bd1HUGfKJ7yQZqJaeqB2y5yaEqQP&noverify=0&group_code=375301835" target="_blank">内部群</a>
+      <p>点击关于我们查看更多</p></div>
       <div class="right"><img src="Snipaste_2025-01-15_16-22-38.png" alt=""><div class="txt"><h3>nova桌面</h3><br><p>轻量和优质安卓桌面</p></div><a href="">下载</a></div>
       <div class="right"><img src="Snipaste_2025-01-15_16-33-47.png" alt=""><div class="txt"><h3>free</h3><br><p>免费看片是我的秘密武器</p></div><a href="">下载</a></div>
       <div class="right"><img src="Snipaste_2025-01-15_16-36-36.png" alt=""><div class="txt"><h3>奇妙应用</h3><br><p>海量安卓软件资源</p></div><a href="">下载</a></div>
@@ -145,5 +238,41 @@
    const body=document.querySelector('body');
    document.body.style.backgroundImage = "url('bj/bj" + pc[mjq] + ".png')";
    }
+   
+   const adleft = document.querySelector('.adleft');
+   const h3c = document.querySelector('.adright>h3');
+   const ppc = document.querySelector('.adright>p');
+  const nrr = document.querySelector('.anr')
+   const nll = document.querySelector('.anl');
+   const h3cc=['决战朝鲜','光与夜之恋','迷你世界']
+   const ppcc=['一款战争模拟游戏','一款黄色游戏','一款盗版沙盒游戏']
+  let i =0
+  
+  
+  nrr.addEventListener('click', function() {
+      i++;
+      if (i > 2) {
+         i = 0;
+      }
+      console.log(i);
+      
+      adleft.src = `./AD/AD(${i}).png`;
+      h3c.textContent = h3cc[i];
+      ppc.textContent = ppcc[i];
+      // log(pc); // This line seems incorrect, consider removing or fixing if needed
+  });
+
+  nll.addEventListener('click', function() {
+      i--;
+      if (i < 0) {
+         i = 2;
+      }
+      console.log(i);
+      
+      adleft.src = `./AD/AD(${i}).png`;
+      h3c.textContent = h3cc[i];
+      ppc.textContent = ppcc[i];
+  });
+    
 </script>
 </html>
