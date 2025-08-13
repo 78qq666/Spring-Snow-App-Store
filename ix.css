@@ -1,10 +1,13 @@
       body {
          background-image: url("bj/bjDCX.png");
-         display: flex;
          background-repeat: no-repeat;
          background-position: top center;
          background-size: 100% 100%;
          background-attachment: fixed;
+      }
+
+      .button {
+         display: flex;
       }
 
       * {
@@ -13,21 +16,43 @@
          box-sizing: border-box;
       }
 
+      .topk {
+         display: flex;
+         justify-content: center;
+         width: 1920px;
+         height: 125px;
+      }
+
+      .top {
+         width: 1845px;
+         height: 70px;
+         background-color: #ffffffe7;
+         margin-top: 20px;
+         border-radius: 30px;
+         position: fixed;
+         margin-right: 20px;
+      }
+      .top>h3{
+         margin-top: 20px;
+         margin-left: 20px;
+      }
+
       .large {
          display: flex;
          justify-content: space-evenly;
-         width: 1595px;
+         width: 1400px;
          flex-wrap: wrap;
+         margin-top: -35px;
          margin-left: 325px;
          align-content: space-around;
       }
 
       .left {
-         width: 300px;
-         height: 900px;
+         width: 100px;
+         height: 530px;
          background-color: white;
-         margin-top: 25px;
-         margin-left: 25px;
+         margin-top: 115px;
+         margin-left: 250px;
          border-radius: 30px;
          overflow: hidden;
          position: fixed;
@@ -54,51 +79,66 @@
          height: 100px;
          margin-top: 2px;
       }
+      .left img {
+        
+         text-align: center;
+         height: 35px;
+         margin-top: 30px;
+      }
 
       .left>a:hover {
          background-color: #f8f8f8;
       }
 
       .right {
-         width: 750px;
-         height: 201px;
+         width: 600px;
+         height: 180px;
          background-color: #fff;
          margin-top: 25px;
          border-radius: 30px;
          display: flex;
          padding-right: 20px;
-         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5)
+         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+         clear: both;
       }
-      .right img {
-         width: 160px;
-         height: 160px;
+
+      .right>img {
+         width: 130px;
+         height: 130px;
          border-radius: 30px;
          margin: 20px;
          box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
       }
+
       .right h3 {
          margin: 20px 0 0 20px;
-         font-size: 40px;
+         font-size: 30px;
          color: #333;
       }
+
       .right p {
          margin: 0 0 0 20px;
          font-size: 20px;
          color: #666;
       }
+
       .right a {
          text-decoration: none;
          color: white;
          background-color: #007bff;
          padding: 10px 40px;
          border-radius: 50px;
-         margin: 20px 10px 20px 100px;
+         margin: 20px 10px 20px 0px;
          align-self: center;
          display: block;
-        font-size: 20px;
-        justify-content: end;
+         font-size: 10px;
+         justify-content: end;
          box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
       }
+      .right>a>img {
+         height: 35px;
+      }
+
       .txt {
          display: flex;
          flex-direction: column;
@@ -106,20 +146,22 @@
          margin-left: 20px;
          width: 261px;
       }
+
       .right_ad {
-         width: 1050px;
-         height: 425px;
+         width: 800px;
+         height: 325px;
          background-color: #fff;
          margin-top: 25px;
+        margin-left: -35px;
          border-radius: 30px;
          display: flex;
          padding-right: 20px;
          box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5)
-         
       }
+
       .right_id {
          width: 450px;
-         height:425px ;
+         height: 425px;
          background-color: #fff;
          margin-top: 25px;
          border-radius: 30px;
@@ -127,74 +169,88 @@
          padding-right: 20px;
          box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5)
       }
-      .adleft{
-         width: 748px;
-         height: 425px;
+
+      .adleft {
+         
+         height: 325px;
          border-radius: 30px 0 0 30px;
       }
+
       .adright>h3 {
-         font-size: 50px;
+         font-size: 30px;
          color: black;
          margin-top: 20px;
       }
+
       .adright {
-         width: 302px;
-        text-align: center;
+         width: 200px;
+         text-align: center;
+         margin-left: 30px;
       }
+
       .adright>p {
          font-size: 20px;
          color: #666;
          margin-top: 10px;
       }
+
       .anl {
          width: 30px;
          height: 30px;
          background-color: #cfcfcf;
          border-radius: 50%;
-         margin-top: 225px ;
-         margin-right: 70px;
+         margin-top: 155px;
+         margin-right: 30px;
          display: inline-block;
          color: #ffffff;
       }
+
       .anr {
          width: 30px;
          height: 30px;
          background-color: #cfcfcf;
          border-radius: 50%;
-         margin-top: 225px ;
-         margin-left: 70px;
+         margin-top: 155px;
+         margin-left: 30px;
          display: inline-block;
          color: #ffffff;
       }
+
       .right_id {
          display: flex;
          flex-direction: column;
          align-items: center;
-         ;
+         width: 350px;
+         height: 325px;
+         margin-right: -30px;
       }
+
       .right_id img {
-         width: 180px;
-         height: 180px;
+         width: 100px;
+         height: 100px;
          border-radius: 30px;
          display: block;
-         margin: 30px 125px 20px 150px ;
+         margin: 30px 125px 20px 150px;
          box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
       }
+
       .right_id a {
-            font-size: 40px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #333;
-            margin-right: 125px;
-            margin-left: 150px;
+         font-size: 30px;
+         font-weight: bold;
+         text-decoration: none;
+         color: #333;
+         margin-right: 75px;
+         margin-left: 100px;
       }
+
       .right_id p {
          font-size: 20px;
          color: #666;
          text-align: center;
-         margin-right: 100px;
-         margin-left: 125px;
+         margin-right: 75px;
+         margin-left: 100px;
       }
+
       /* .idnl {
          width: 30px;
          height: 30px;
@@ -215,3 +271,22 @@
          display: inline-block;
          color: #ffffff;
       } */
+      .db {
+         float: right;
+         background-color: #5aaaff9d;
+         height: 80px;
+         width: 80px;
+         position: fixed;
+         margin-left: 1400px;
+         margin-top: 700px;
+         border-radius: 50px;
+         opacity: 0;
+      }
+
+      .db>p {
+         margin-top: 10px;
+         text-align: center;
+         color: #ffffff;
+         font-size: 40px;
+
+      }
