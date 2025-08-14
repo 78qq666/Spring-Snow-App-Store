@@ -57,6 +57,29 @@ let txt = ['轻量和优质安卓桌面', '免费看片是我的秘密武器', '
 for (let i = 0; i < imgs.length; i++) {
   document.write(`<div class="right"><img src="${imgs[i]}" alt=""><div class="txt"><h3>${hs[i]}</h3><br><p>${txt[i]}</p></div><a href=""><img src="icons8-download-48.png" alt=""></a></div>`)
 }
+const diaoche=document.querySelector('.hu')
+function sj(){
+const date=new Date()
+let dy=date.getFullYear()
+let dm=date.getMonth()+1
+let dd=date.getDate()
+let dh=date.getHours()
+let dmi=date.getMinutes()
+let ds=date.getSeconds()
+let dz=date.getDay()
+const xq=['周日','周一','周二','周三','周四','周五','周六']
+dh=dh<10 ? '0'+dh:dh
+dm=dm<10 ? '0'+dm:dm
+dd=dd<10 ? '0'+dd:dd
+ds=ds<10 ? '0'+ds:ds
+dmi=dmi<10 ? '0'+dmi:dmi
+return dy+'/'+dm+'/'+dd+' '+dh+':'+dmi+':'+ds+'  '+xq[dz]}
+
+setInterval(function() {
+  diaoche.innerHTML=`<h4 class="hu">${sj()}</h4>`
+},1000);
+console.log(sj());
+
 window.onload = function() {
 const ddb=document.querySelector('.db')
 console.log(ddb.style.opacity);
