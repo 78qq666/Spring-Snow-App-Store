@@ -51,7 +51,7 @@ rightidp.addEventListener('click', function () {
 
 })
 
-let imgs = ['Snipaste_2025-01-15_16-22-38.png', 'Snipaste_2025-01-15_16-33-47.png', 'Snipaste_2025-01-15_16-36-36.png', 'Snipaste_2025-01-15_16-39-49.png', 'Snipaste_2025-01-15_16-41-00.png', 'Snipaste_2025-01-15_16-43-04.png', 'Snipaste_2025-01-15_16-44-31.png', 'Snipaste_2025-01-15_16-45-34.png', 'DM_20250813094850_001.png', 'DM_20250813094926_001.png', 'DM_20250813095020_001.png', 'PixPin_2025-08-13_09-48-15.png'];
+let imgs = ['DM_20250815104153_001.jpg', 'app.png', 'Snipaste_2025-01-15_16-36-36.png', 'telegram-6896827_1280.jpg', 'Snipaste_2025-01-15_16-41-00.png', 'Snipaste_2025-01-15_16-43-04.png', 'Snipaste_2025-01-15_16-44-31.png', 'Snipaste_2025-01-15_16-45-34.png', 'DM_20250813094850_001.png', 'DM_20250813094926_001.png', 'DM_20250813095020_001.png', 'PixPin_2025-08-13_09-48-15.png'];
 let hs = ['nova桌面', 'free', '奇妙应用', 'telegram', 'bilimiao', 'aurora store', '太极', 'magisk面具', 'TIM', '七点工具箱', '酷狗概念版', '卡世界']
 let txt = ['轻量和优质安卓桌面', '免费看片是我的秘密武器', '海量安卓软件资源', '知名加密通讯软件', '非常好用的第三方B站客户端', '轻量开源版Google Play', '为你的安卓应用内嵌模块', '为你的手机系统内嵌模块,也可以root你的手机', '轻量简洁版QQ', '集成两百多种工具', '每日登录就送VIP的音乐软件', '推广和购买流量卡'];
 for (let i = 0; i < imgs.length; i++) {

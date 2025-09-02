@@ -113,7 +113,7 @@
       .right>img {
          width: 130px;
          height: 130px;
-         /* border-radius: 30px; */
+         border-radius: 30px;
          margin: 20px;
          box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
       }
